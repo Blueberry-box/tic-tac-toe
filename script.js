@@ -91,6 +91,7 @@ const gameFlow = (() => {
     while (gameboard.isGameWon() === false) {
         player1.isMyTurn? player1.playMove(): player2.playMove();
         gameboard.printGameState();
+        // draw game here
         swapTurns();
     }
 })();

@@ -1,9 +1,127 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
-    background: linear-gradient(#e66465, #9198e5);
+    background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.game {
+    text-align: center;
+    height: 399px;
+    width: 399px;
+    background-color: rgb(230, 15, 15);
+    display: grid;
+    grid-template-columns: 133px 133px 133px;
+    grid-template-rows: 133px 133px 133px;
+    font-size: 100px;
+    
+}
+
+.cell {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.cell1 {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.cell2 {
+    margin-top: 0px;
+}
+
+.cell3 {
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.cell4 {
+    margin-left: 0px;
+}
+
+.cell6 {
+    margin-right: 0px;
+}
+
+.cell7 {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.cell8 {
+    margin-bottom: 0px;
+}
+
+.cell9 {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.inputname > input {
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 40px;
+}
+.inputnames > div{
+    font-size: 40px;
+}
+
+.page1 {
+    display: grid;
+    gap: 20px;
+
+}
+
+.play {
+    background-color: rgb(68, 227, 63);
+    height: 70px;
+    width: 160px;
+    border-radius: 10px;
+    font-size: 40px;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.play:hover {
+    border: 2px solid black;
+}
+
+.gameinfo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.resetButton {
+    background-color: rgb(228, 232, 13);
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    margin: 0 auto;
+    width: 100%;
+    margin: 15px;
+}
+
+.resetButton:hover {
+    border: 2px solid black;
 }
